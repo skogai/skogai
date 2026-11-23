@@ -1,3 +1,4 @@
-[submodule "tools"]
-	path = tools
-	url = https://github.com/skogai/tools.git
+[submodule "mise"]
+	path = .skogai/src/mise
+	url = git@github.com:skogai/mise.git
+	branch = main
