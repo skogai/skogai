@@ -1,3 +1,11 @@
 #:schema https://fnox.jdx.dev/schema.json
 # Secrets for the hub. Define a provider before `fnox set` (see the fnox skill):
 # without one, `set` writes a plaintext default.
+default_provider = "age"
+
+[providers.age]
+type = "age"
+recipients = ["age100lv8zupx50vwz08lykuctwgp9w3ze0veus5kzu00j5yhezc8ceqr4dx50"]
+
+[secrets]
+MY_TEST_SECRET= { provider = "age", value = "YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBJTFNObGdOejdQZzZ0eGRrK05rRXZNbmh4SzdqYlZ2d2Rqd0w0c0tHQ2dNCnA3SFNpSzJpM0lsdjN6L0ZSWUErbXgxVHdSWWVJNnNyWTlaQUN4SkVMMHMKLT4gUS1ncmVhc2UgZjU+cGx4cEIgRSBYU1g9Cm1acjFOdjJnZXJQZnVjaHlpeHJoMWVyR211WDZQNEU1d1hOYlZ1a1YrSHc0SkU4WXRDN090VXBTRTRtRDR6Y0YKRVJ1QVhRY0oKLS0tIGtWR0t4TUNwUXc1dHVIVi9Jbm5zZ1k4WVcxczJWNEhIUVZ3QXIwVit4UFEKWue/n4S87XcNNhNbbFJ36irLV/vNbJ4nqI4GRQRfRTeNR8zAfRHUXwDYYQ==" }
