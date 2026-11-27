@@ -1,5 +1,16 @@
+min_version = "2026.10.4"   # older mise rejects `secrets` on a task
+
+[settings]
+experimental = true         # mise secrets is experimental
+
 [tools]
 "packslip:github.com/skogai/cli" = "latest"
+fnox = "latest"
+
+# fnox is the secrets source. A task gets a secret only by listing it in
+# `secrets = [...]`; the shell, `mise env` and other tasks never see it.
+# Secret definitions live in fnox.toml at the repo root.
+[secrets.fnox]
 
 [deps]
 git-submodule = { auto = true }

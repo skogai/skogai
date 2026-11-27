@@ -59,7 +59,7 @@ Guide: https://packslip.dev/docs/publishing/
 ## Out of scope (for now)
 
 - what the subcommands actually do: decided one at a time later
-- the legacy `config/config.json` model (stays as is until replaced)
+- which secrets exist and which age recipients encrypt them (fnox is wired into mise, but `fnox.toml` has no providers yet)
 - security hardening (comes after it works)
 
 ## Open decisions

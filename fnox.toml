@@ -1,0 +1,3 @@
+#:schema https://fnox.jdx.dev/schema.json
+# Secrets for the hub. Define a provider before `fnox set` (see the fnox skill):
+# without one, `set` writes a plaintext default.

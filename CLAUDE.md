@@ -15,7 +15,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - mise only reads `.skogai/config/mise.toml` when `MISE_DEFAULT_CONFIG_FILENAME=.skogai/config/mise.toml` is already in the environment before mise starts. On this machine it is set in `~/.config/environment.d/50-skogai-mise.conf` (needs a re-login). The same line in the root `mise.toml` `[env]` only reaches child processes, not mise's own config discovery. Put tool/task/deps changes in `.skogai/config/mise.toml`, not the root `mise.toml`.
 - Tasks for agents carry the tag `agent` (our own convention; mise gives tags no meaning). Find them with `mise tasks ls --tag agent --json`, run them with `mise run --tag agent`.
 - `.claude/settings.json` has a `SessionStart` hook that writes `eval "$(mise hook-env -s zsh)"` to `$CLAUDE_ENV_FILE`, so Claude Code's Bash commands get the project's mise tools and `[env]`.
-- `config/config.json` is the legacy SkogAI config: per-agent env blocks (`skogai`, `claude`, `dot`, `amy`, `goose`, `codex`, …), CLI `settings`, and the `$` block defining SkogAI notation. Other tools read it via `$SKOGAI_CONFIG`. It contains credentials, so never print, copy, or move its values anywhere.
+- Secrets: fnox is the source (`[secrets.fnox]` in `.skogai/config/mise.toml`, definitions in the root `fnox.toml`). A task receives a secret only by listing it in `secrets = [...]`, and `mise x --secrets KEY -- cmd` grants one key to one command. Never commit plaintext secrets: define an fnox provider before `fnox set`. `mise secrets ls` shows what is injectable. The old `config/config.json` was removed from the repo because it held credentials.
 
 ## Commands
 
