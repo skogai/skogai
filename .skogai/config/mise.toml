@@ -4,3 +4,11 @@
 
 [deps]
 git-submodule = { auto = true }
+
+# Agent-facing tasks. Tags are our own convention; mise gives them no meaning.
+# Find them with: mise tasks ls --tag agent --json
+[tasks."agent:status"]
+description = "Show repo and submodule state"
+tags = ["agent", "check"]
+dir = "{{cwd}}"
+run = ["git status --short --branch", "git submodule status"]
