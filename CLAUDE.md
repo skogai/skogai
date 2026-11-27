@@ -29,4 +29,4 @@ There is no build, lint, or test setup in this repo. `.skogai/src/mise` is a ful
 
 ## Direction
 
-The stated goal in `.skogai/config/mise.toml` is to install the SkogAI CLI through mise (`"pipx:skogai/cli" = "latest"`, currently commented out). Context and docs for agents follow the plan in `.skogai/docs/research/lod.md`: keep context files short and hand-written with only facts an agent can't work out itself, route at most one level deep, and generate symbol outlines instead of writing them by hand.
+The goal is a `skogai` program installed through mise's `packslip:` backend, with completions from its usage spec; see `PROJECT.md`. Context and docs for agents follow the plan in `.skogai/docs/research/lod.md`: keep context files short and hand-written with only facts an agent can't work out itself, route at most one level deep, and generate symbol outlines instead of writing them by hand.

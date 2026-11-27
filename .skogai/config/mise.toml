@@ -1,7 +1,3 @@
-# goal:
-# [tools]
-# "pipx:skogai/cli" = "latest"
-
 [deps]
 git-submodule = { auto = true }
 
