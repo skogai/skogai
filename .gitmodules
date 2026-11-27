@@ -2,3 +2,11 @@
 	path = .skogai/src/mise
 	url = git@github.com:skogai/mise.git
 	branch = main
+[submodule "cli"]
+	path = .skogai/src/cli
+	url = git@github.com:skogai/cli.git
+	branch = master
+[submodule ".skogai/src/cli"]
+	path = .skogai/src/cli
+	url = git@github.com:skogai/cli.git
+	branch = master
