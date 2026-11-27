@@ -1,2 +1,5 @@
 - [ ] add forgejo git setup
 
+- [ ] implement basic atuin threads support
+- [ ] look over how much skillshare can be used
+- [ ] add lms server as a autostart

@@ -6,3 +6,7 @@
 	path = .skogai/src/cli
 	url = https://github.com/skogai/cli.git
 	branch = master
+[submodule ".skogai/src/cloudflare"]
+	path = .skogai/src/cloudflare
+	url = git@github.com:skogai/cloudflare.git
+	branch = master
