@@ -1,6 +1,6 @@
 #:schema https://fnox.jdx.dev/schema.json
-# Secrets for the hub. Define a provider before `fnox set` (see the fnox skill):
-# without one, `set` writes a plaintext default.
+# Secrets for the hub, encrypted with age. Private key: ~/.config/fnox/age.txt
+# (not in git, not tracked by dotfiles). Without a provider, `fnox set` writes plaintext.
 default_provider = "age"
 
 [providers.age]
