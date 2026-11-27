@@ -1,3 +1,6 @@
+[tools]
+"packslip:github.com/skogai/cli" = "latest"
+
 [deps]
 git-submodule = { auto = true }
 
