@@ -10,5 +10,8 @@
         ]
       }
     ]
+  },
+  "enabledPlugins": {
+    "skogai-events@skogai-marketplace": true
   }
 }
